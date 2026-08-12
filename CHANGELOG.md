@@ -9,3 +9,5 @@
 - Model catalog including SeedVR2, DreamSR, TEASR, ODTSR and PGSR status.
 
 - Added configurable input/output root sandboxing, external executable doctor validation, process-log paths, provider argv, and environment snapshot provenance.
+
+- Published the verified core snapshot to `arumajirou/super_resolution_studio` and reconciled repository-status documentation.

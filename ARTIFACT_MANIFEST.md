@@ -30,4 +30,4 @@ The final ZIP also includes `evidence/` with dependency-blocker logs, final pyte
 
 ## Verification state
 
-Core implementation: **VERIFIED for the built-in baseline / PARTIALLY_VERIFIED overall**. Real GPU inference certification for research providers and publication to a newly created GitHub repository remain separate gates.
+Core implementation: **VERIFIED for the built-in baseline / PARTIALLY_VERIFIED overall**. Real GPU inference certification for research providers remains a separate gate. Publication to `arumajirou/super_resolution_studio` is complete; GitHub Project creation remains pending because the connected GitHub toolset does not expose Project operations.

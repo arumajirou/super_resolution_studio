@@ -18,6 +18,7 @@ Verification date: 2026-08-12.
 - PGSR blocked-checkpoint gate: PASS; execution is refused before inference.
 - FiDeSR/TinySR/VOSR command-generation contract tests: PASS.
 - High-confidence tracked-file secret scan: PASS / no matches.
+- GitHub repository publication: PASS. `arumajirou/super_resolution_studio` `main` was updated through the GitHub connector, and the published root tree was byte-aligned to the verified local snapshot before the publication-status documentation update.
 
 ## PARTIALLY VERIFIED
 
@@ -29,7 +30,7 @@ Verification date: 2026-08-12.
 - `uv sync --all-groups`: BLOCKED by the execution container's DNS/network failure when resolving PyPI (`pypi.org`), not by a dependency-resolution conflict proven in this run.
 - `uv.lock`: BLOCKED because dependency metadata required to resolve the lock is not present in the local uv cache while the network is unavailable.
 - Ruff and mypy: BLOCKED because they are not preinstalled and PyPI is unreachable. Therefore the full declared local quality gate is **PARTIALLY_VERIFIED**, not fully VERIFIED.
-- GitHub repository and GitHub Project creation: BLOCKED because the connected GitHub action set exposes operations inside existing repositories but no repository/project creation operation, and this runtime has no local `gh` binary.
+- GitHub Project creation/attachment: BLOCKED because the connected GitHub action set does not expose GitHub Project operations. Repository creation/publication is no longer blocked.
 - Hugging Face plugin: upstream 502 during this turn; public official model pages/repositories were used for source verification, but no user-account mutation was performed.
 
 ## Final evidence paths
