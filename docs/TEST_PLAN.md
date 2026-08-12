@@ -14,5 +14,5 @@ GPU certification is separate and must record model/revision/runtime/CUDA/GPU/VR
 - Configured input/output root sandbox acceptance and escape rejection.
 - PGSR blocked-checkpoint refusal before execution.
 - Configured-external runtime doctor rejects missing executable.
-- Provider timeout is recorded as a per-file `TIMEOUT` without corrupting batch state.
+- Provider timeout is recorded as a per-file TIMEOUT without corrupting batch state.
 - Directory symlink escape is rejected when input roots are configured.
