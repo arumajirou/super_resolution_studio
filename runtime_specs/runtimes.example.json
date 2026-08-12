@@ -1,0 +1,33 @@
+[
+  {
+    "model_id": "fidesr",
+    "workdir": "/opt/sr-runtimes/FiDeSR",
+    "python_executable": "/opt/sr-runtimes/fidesr/.venv/bin/python",
+    "paths": {
+      "base_model": "/opt/sr-models/stable-diffusion-2-1-base",
+      "checkpoint": "/opt/sr-models/fidesr/fidesr.pkl"
+    },
+    "timeout_seconds": 3600
+  },
+  {
+    "model_id": "tinysr",
+    "workdir": "/opt/sr-runtimes/TinySR",
+    "python_executable": "/opt/sr-runtimes/tinysr/.venv/bin/python",
+    "paths": {
+      "backbone": "/opt/sr-models/tinysr/tinybackbone/prune-12-merge-tinysr",
+      "vae": "/opt/sr-models/tinysr/vae/separable",
+      "lora": "/opt/sr-models/tinysr/tinysr",
+      "embedding": "/opt/sr-runtimes/TinySR/dataset/default"
+    },
+    "timeout_seconds": 3600
+  },
+  {
+    "model_id": "vosr-0.5b-one-step",
+    "workdir": "/opt/sr-runtimes/VOSR",
+    "python_executable": "/opt/sr-runtimes/vosr/.venv/bin/python",
+    "paths": {
+      "checkpoint_0.5B_os": "/opt/sr-runtimes/VOSR/preset/ckpts/VOSR_0.5B_os"
+    },
+    "timeout_seconds": 3600
+  }
+]
